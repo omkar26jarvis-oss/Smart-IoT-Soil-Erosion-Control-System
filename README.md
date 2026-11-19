@@ -67,6 +67,8 @@ The basic sensor monitoring, LED indicators, buzzer alert and IoT data uploading
 ![Prototype Back View](Images/prototype_backend.jpg)
 ## System Block Diagram
 
+## System Block Diagram
+
 ```mermaid
 flowchart TD
     A[Soil Moisture Sensor] --> C[ESP32 DevKit V1]
@@ -80,7 +82,9 @@ flowchart TD
     I --> J[Live Sensor Graphs]
     C --> K[Telegram Bot]
     K --> L[Mobile Alert]
-    ## Circuit Connection Diagram
+```
+
+## Circuit Connection Diagram
 
 ```mermaid
 flowchart TB
@@ -106,4 +110,4 @@ flowchart TB
     C --> E
     C --> F
     C --> G
-
+```
