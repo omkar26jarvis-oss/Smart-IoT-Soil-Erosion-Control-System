@@ -80,3 +80,30 @@ flowchart TD
     I --> J[Live Sensor Graphs]
     C --> K[Telegram Bot]
     K --> L[Mobile Alert]
+    ## Circuit Connection Diagram
+
+```mermaid
+flowchart TB
+    subgraph INPUTS
+        A[Soil Moisture Sensor]
+        B[Rain Drop Sensor]
+    end
+
+    subgraph ESP32
+        C[ESP32 DevKit V1]
+    end
+
+    subgraph OUTPUTS
+        D[Green LED - GPIO 19]
+        E[Yellow LED - GPIO 21]
+        F[Red LED - GPIO 22]
+        G[Buzzer - GPIO 23]
+    end
+
+    A -->|AO - GPIO 34| C
+    B -->|AO - GPIO 35| C
+    C --> D
+    C --> E
+    C --> F
+    C --> G
+
