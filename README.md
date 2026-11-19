@@ -36,7 +36,7 @@ I have used an ESP32 microcontroller along with soil moisture and rain sensors. 
    - Yellow – Moderate Risk
    - Red – High Risk
 6. The buzzer gives an alert when high-risk conditions are detected.
-7. The sensor readings are uploaded to ThingSpeak, where graphs can be viewed.
+7. Sensor readings are uploaded to ThingSpeak, where graphs can be viewed.
 8. Telegram notifications are used to send alerts.
 
 ## IoT Implementation
