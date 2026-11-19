@@ -58,3 +58,10 @@ The basic sensor monitoring, LED indicators, buzzer alert and IoT data uploading
 **Course:** BTech – Electronics and Communication Engineering
 
 **Project Type:** Mini Project
+## Project Photos
+
+### Front View
+![Prototype Front View](Images/prototype_frontend.jpg)
+
+### Back View
+![Prototype Back View](Images/prototype_backend.jpg)
