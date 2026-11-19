@@ -65,3 +65,18 @@ The basic sensor monitoring, LED indicators, buzzer alert and IoT data uploading
 
 ### Back View
 ![Prototype Back View](Images/prototype_backend.jpg)
+## System Block Diagram
+
+```mermaid
+flowchart TD
+    A[Soil Moisture Sensor] --> C[ESP32 DevKit V1]
+    B[Rain Drop Sensor] --> C
+    C --> D[Green LED - Low Risk]
+    C --> E[Yellow LED - Moderate Risk]
+    C --> F[Red LED - High Risk]
+    C --> G[Buzzer Alert]
+    C --> H[Wi-Fi Connection]
+    H --> I[ThingSpeak IoT Cloud]
+    I --> J[Live Sensor Graphs]
+    C --> K[Telegram Bot]
+    K --> L[Mobile Alert]
